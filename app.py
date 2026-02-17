@@ -3,7 +3,7 @@ import numpy as np
 import cv2
 from streamlit_drawable_canvas import st_canvas
 
-st.title("Handwritten Digit Recognition (Scratch DNN)")
+st.title("Handwritten Digit Recognition")
 
 canvas_result = st_canvas(
     fill_color="black",
@@ -55,4 +55,4 @@ if canvas_result.image_data is not None:
 
     st.image(img, width=150)
     st.write(f"### Predicted Digit: {digit}")
-    st.write(f"Confidence: {confidence:.4f}")
+    # st.write(f"Confidence: {confidence:.4f}")
